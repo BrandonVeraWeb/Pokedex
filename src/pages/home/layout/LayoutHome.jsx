@@ -18,7 +18,7 @@ function LayoutHome() {
   return (
     <div className={style.layout}>
       <Header />
-      <div>
+      <div className={style.card_content}>
         {arrayPokemon.map((card, index) => {
           return <Card key={index} card={card} />;
         })}
